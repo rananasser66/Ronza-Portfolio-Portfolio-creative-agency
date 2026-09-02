@@ -1,0 +1,251 @@
+/**
+ * Ronza Theme
+ * Blog styles
+ */
+
+/*--------------------------------------------------------------
+# Blog Archive
+--------------------------------------------------------------*/
+
+.blog-archive {
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.blog-archive__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px 30px;
+}
+
+/*--------------------------------------------------------------
+# Blog Card
+--------------------------------------------------------------*/
+
+.blog-card {
+	overflow: hidden;
+}
+
+.blog-card__link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+
+.blog-card__image {
+	/*aspect-ratio: 16 / 10;
+	overflow: hidden;
+	background-color: #ddddda;*/
+	overflow: hidden;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border: 2px solid var(--ronza-accent);
+}
+
+.blog-card__thumbnail {
+	/*width: 100%;
+	height: 100%;*/
+	display: block;
+	object-fit: cover;
+	transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-card__thumbnail {
+	transform: scale(1.04);
+}
+
+.blog-card__placeholder {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #888888;
+}
+
+.blog-card__content {
+	padding-top: 25px;
+}
+
+.blog-card__meta {
+	margin-bottom: 10px;
+	color: var(--ronza-accent);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.blog-card__title {
+	margin: 0 0 15px;
+	font-size: 28px;
+	line-height: 1.2;
+}
+.blog-card__title{
+	white-space:normal;
+	overflow:visible;
+	height:auto;
+	max-height:none;
+	overflow-wrap:anywhere
+}
+
+.blog-card__excerpt {
+	color: #666666;
+	line-height: 1.7;
+}
+
+.blog-card__excerpt p {
+	margin: 0;
+}
+
+.blog-card__read-more {
+	display: inline-block;
+	margin-top: 20px;
+	color: var(--ronza-primary);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.blog-card__link:hover .blog-card__read-more {
+	color: var(--ronza-accent);
+}
+
+/*--------------------------------------------------------------
+# Blog Pagination
+--------------------------------------------------------------*/
+
+/*.blog-archive .nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 70px;
+}
+
+.blog-archive .page-numbers {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 42px;
+	min-height: 42px;
+	padding: 0 12px;
+	color: var(--ronza-primary);
+	border: 1px solid #dddddd;
+	text-decoration: none;
+}
+
+.blog-archive .page-numbers.current,
+.blog-archive .page-numbers:hover {
+	color: var(--ronza-background);
+	background-color: var(--ronza-primary);
+	border-color: var(--ronza-primary);
+}*/
+
+/*--------------------------------------------------------------
+# Single Post
+--------------------------------------------------------------*/
+
+.single-post__header {
+	padding-top: 100px;
+	padding-bottom: 70px;
+	background-color: var(--ronza-primary);
+}
+
+.single-post__title {
+	max-width: 900px;
+	margin: 0 0 25px;
+	color: var(--ronza-background);
+	font-size: clamp(48px, 7vw, 80px);
+	line-height: 1;
+	letter-spacing: -0.04em;
+}
+.single-post__title{
+	white-space:normal;
+	overflow:visible;
+	height:auto;
+	max-height:none;
+	overflow-wrap:anywhere
+}
+
+.single-post__meta {
+	color: #cccccc;
+	font-size: 14px;
+}
+
+.single-post__image {
+	padding-top: 70px;
+}
+
+.single-post__thumbnail {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.single-post__content {
+	max-width: 800px;
+	margin-inline: auto;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+.single-post__content h2 {
+	margin-top: 50px;
+	font-size: 36px;
+	line-height: 1.2;
+}
+
+.single-post__content h3 {
+	margin-top: 40px;
+	font-size: 28px;
+	line-height: 1.3;
+}
+
+.single-post__content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.single-post__content a {
+	color: var(--ronza-accent);
+}
+
+/*--------------------------------------------------------------
+# Blog Responsive
+--------------------------------------------------------------*/
+
+@media (max-width: 900px) {
+
+	.blog-archive__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.blog-archive {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	.blog-archive__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.single-post__header {
+		padding-top: 70px;
+		padding-bottom: 50px;
+	}
+
+	.single-post__image {
+		padding-top: 40px;
+	}
+
+	.single-post__content {
+		padding-top: 50px;
+		padding-bottom: 70px;
+		font-size: 16px;
+	}
+
+}

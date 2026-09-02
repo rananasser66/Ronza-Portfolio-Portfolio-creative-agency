@@ -1,0 +1,138 @@
+/**
+ * Ronza Theme
+ * Contact page styles
+ */
+
+.contact-hero {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: var(--ronza-primary);
+}
+
+.contact-hero__eyebrow {
+	margin: 0 0 15px;
+	color: var(--ronza-accent);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.contact-hero__title {
+	max-width: 900px;
+	margin: 0;
+	color: var(--ronza-background);
+	font-size: clamp(52px, 8vw, 90px);
+	line-height: 0.98;
+	letter-spacing: -0.04em;
+}
+
+.contact-main__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	align-items: start;
+}
+
+.contact-info h2,
+.contact-form h2 {
+	margin: 0 0 20px;
+	font-size: clamp(36px, 5vw, 54px);
+	line-height: 1.05;
+}
+
+.contact-info__description {
+	max-width: 550px;
+	margin: 0 0 50px;
+	color: #666666;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+.contact-details {
+	display: grid;
+	gap: 30px;
+}
+
+.contact-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.contact-detail__label {
+	color: var(--ronza-accent);
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.contact-detail__label i{
+	margin-right: 5px;
+}
+
+.contact-detail a,
+.contact-detail span:last-child {
+	color: #666666;
+	line-height: 1.6;
+	text-decoration: none;
+}
+
+.contact-detail a:hover {
+	color: var(--ronza-accent);
+}
+
+.contact-form {
+	padding: 100px;
+	background-color: var(--ronza-secondary);
+	border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.contact-form__header {
+	margin-bottom: 40px;
+}
+
+.contact-form__placeholder {
+	padding: 50px 30px;
+	text-align: center;
+	background-color: var(--ronza-background);
+	border: 1px dashed #cccccc;
+}
+
+.contact-form__placeholder p {
+	margin: 0;
+	color: #777777;
+}
+
+/*--------------------------------------------------------------
+# Responsive Page
+--------------------------------------------------------------*/
+
+@media (max-width: 900px) {
+
+	.contact-main__grid {
+		grid-template-columns: 1fr;
+		gap: 60px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.contact-hero {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	.contact-form {
+		padding: 30px;
+		border-top-left-radius: 65px;
+        border-bottom-right-radius: 65px;
+	}
+
+	.contact-info__description {
+		font-size: 16px;
+	}
+
+}

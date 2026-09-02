@@ -1,0 +1,92 @@
+/**
+ * Ronza Theme
+ * Component styles
+ */
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 52px;
+	padding: 0 28px;
+	border: 1px solid transparent;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.button--primary{
+	color: var(--ronza-button-primary-text);
+	background-color: var(--ronza-button-primary-background);
+}
+
+.button--primary:hover {
+	color: var(--ronza-button-primary-hover-text);
+	background-color: var(--ronza-button-primary-hover-background);
+	border-color: var(--ronza-button-primary-hover-border);
+}
+
+.button--secondary {
+	color: var(--ronza-button-secondary-text);
+	background-color: transparent;
+	border-color: var(--ronza-button-secondary-border);
+}
+
+.button--secondary:hover {
+	color: var(--ronza-button-secondary-hover-text);
+	background-color: var(--ronza-button-secondary-hover-background);
+	border-color: var(--ronza-button-secondary-hover-border);
+}
+
+.button--light {
+	color: var(--ronza-button-light-text);
+	background-color: var(--ronza-button-light-background);
+}
+
+.button--light:hover {
+	color: var(--ronza-button-light-hover-text);
+	background-color: var(--ronza-button-light-hover-background);
+	border-color: var(--ronza-button-light-hover-border);
+}
+
+/*--------------------------------------------------------------
+# Section Header
+--------------------------------------------------------------*/
+
+.section-header {
+	max-width: 720px;
+	margin-bottom: 60px;
+}
+
+.section-header__eyebrow,
+.hero__eyebrow,
+.cta__eyebrow {
+	margin: 0 0 15px;
+	color: var(--ronza-accent);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.section-header__title {
+	margin: 0 0 20px;
+	color: var(--ronza-primary);
+	font-size: clamp(36px, 5vw, 58px);
+	line-height: 1.05;
+}
+
+.section-header__description {
+	max-width: 620px;
+	margin: 0;
+	color: #666666;
+	font-size: 18px;
+	line-height: 1.7;
+}

@@ -1,0 +1,149 @@
+/**
+ * Ronza Theme
+ * Footer styles
+ */
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.site-footer {
+	padding-top: 70px;
+	padding-bottom: 25px;
+	color: var(--ronza-background);
+	background-color: var(--ronza-primary);
+}
+
+.site-footer__main {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1fr;
+	gap: 60px;
+	padding-bottom: 10px;
+}
+
+.site-footer__brand {
+	max-width: 360px;
+}
+
+.site-footer .custom-logo {
+	max-width: 180px;
+}
+
+.site-footer__title {
+	display: inline-block;
+	color: var(--ronza-background);
+	font-size: 24px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.site-footer__title:hover {
+	color: var(--ronza-accent);
+}
+
+.site-footer__description {
+	margin-top: 20px;
+	color: #cccccc;
+	line-height: 1.7;
+}
+
+.site-footer__heading {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: var(--ronza-background);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.footer-menu,
+.footer-legal-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-menu li,
+.footer-legal-menu li {
+	margin-bottom: 12px;
+}
+
+.footer-menu a,
+.footer-legal-menu a {
+	color: #cccccc;
+	font-size: 15px;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.footer-menu a:hover,
+.footer-legal-menu a:hover {
+	color: var(--ronza-accent);
+}
+
+.site-footer__widgets {
+	color: #cccccc;
+}
+
+.site-footer__widgets p {
+	margin-top: 0;
+	line-height: 1.7;
+}
+
+.site-footer__widgets .widget {
+	margin-bottom: 25px;
+}
+
+.site-footer__widgets .widget-title {
+	color: var(--ronza-background);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.site-footer__bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	padding-top: 25px;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.site-footer__copyright {
+	margin: 0;
+	color: #aaaaaa;
+	font-size: 14px;
+}
+
+.footer-legal-menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.footer-legal-menu li {
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+	.site-footer {
+		padding-top: 50px;
+	}
+
+	.site-footer__main {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		padding-bottom: 40px;
+	}
+
+	.site-footer__bottom {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+}
